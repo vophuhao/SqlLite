@@ -13,7 +13,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         super(context, name, factory, version);
 }
 //truy vấn không trả kết quả Create, Insert, update, delete,..
-public void QueryData (String sql){
+public void QuerryData (String sql){
     SQLiteDatabase database = getWritableDatabase();
     database.execSQL(sql);
 }

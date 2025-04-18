@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp">
+
+        <!-- TextView hiển thị tên -->
+        <TextView
+            android:id="@+id/tv_nameNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Name"
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
+
+        <!-- Nút Edit -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgEdit_note"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edit_icon" />
+
+        <!-- Nút Delete -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgDelete_note"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icontrash" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -13,6 +13,21 @@
         android:theme="@style/Theme.SqlLite"
         tools:targetApi="31">
         <activity
+            android:name=".sharedpreferences.NewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreferences.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreferences.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
